@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up</title>
+    
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/registrar.css">
+    
+</head>
+
+<body>
+        <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Saylor Moon LTDA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active ps-5" aria-current="page" href="./index.html">
+                                <div class="sb-nav-link-icon "><i class="fas fa-home "></i></div>
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">   
+        
+        <div class="d-flex justify-content-center h-100">
+            <div class="card-sing-up">
+                <div class="card-header">
+                    <br>
+                    <h3 class="text-center text-info" >Registrarse</h3>
+                </div>
+                <div class="card-body">
+                    <form id="frmSignUp" class="was-validated">
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre" id="name" minlength="5" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-at"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="E-mail" aria-describedby="emailHelp"
+                                id="email" minlength="5" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="pass" placeholder="Contraseña" maxlength="15"
+                                minlength="6" required>
+                        </div>
+
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="passConfir" placeholder="Confirmar Contraseña"
+                                maxlength="15" minlength="6" required>
+                        </div>
+
+                        <br>
+                        <div class="d-none text-center text-danger" id="diffPass">
+                            <p>
+                                Las contraseñas no coinciden
+                            </p>
+                        </div>
+                        <div class="d-none text-center text-danger" id="emailExis">
+                            <p>
+                                El correo electronico ya se encuentra registrado
+                            </p>
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="submit" value="Crear" class="btn btn-info btn-md login_btn">
+                        </div>
+                    </form>
+                </div>
+
+                <hr style="border-color:  #1236ff; border-width: 3px; opacity: 50%; ">
+
+                <div class="card-footer">
+                    <div class="d-flex justify-content-center links">
+                        <h5 style="color:#138496" >
+                            ¿Ya tienes una cuenta? <a href="login.html" class="text-danger"> Inicia sesion aqui </a>
+                            <br>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <script src="js/signUp.js"></script>
+</body>
+
+</html>
